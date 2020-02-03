@@ -51,6 +51,7 @@ body {
     font-family: Helvetica, sans-serif;
     background-color: white;
     position: relative;
+    height: 15000px;
   }
   
   a {
@@ -80,6 +81,7 @@ padding-bottom: 0px;
     position: relative;
     width: 100%;
     min-height: 50px !important;
+    margin-bottom: 0px !important;
   }
   
   .navbar ul {
@@ -202,3 +204,14 @@ padding-bottom: 0px;
     }
   }
   
+  /*parallax*/
+.parallax{
+    background-image:  url(../testBlog/image/parallax.jpg);
+    background-position: center ;
+    height: 500px;
+    background-attachment: fixed;
+
+}
+.sectionEffectParallax{
+  position: relative;
+}
