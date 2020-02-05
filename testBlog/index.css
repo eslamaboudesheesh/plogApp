@@ -528,7 +528,7 @@ textarea.inputform {
 textarea.inputform:hover, textarea.inputform:focus{
   outline: none;
   border-width: 1px;
-  background-color: rgba(24, 24, 24, 0.01)
+  background-color: rgba(24, 24, 24, 0.01);
   border-style: solid;
   border-color: rgba(255, 255, 255, 1);
 }
