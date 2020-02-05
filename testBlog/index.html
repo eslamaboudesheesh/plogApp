@@ -1,233 +1,313 @@
 <!DOCTYPE html>
 <html>
-
-<head>
-    <meta charset='utf-8'>
-    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <title>Page Title</title>
-    <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <link rel='stylesheet' type='text/css' media='screen' href='js/bootstrap.min.css'>
-    <link rel='stylesheet' type='text/css' media='screen' href='index.css'>
-    <link href="font-awesome/css/font-awesome.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      media="screen"
+      href="js/bootstrap.min.css"
+    />
+    <link rel="stylesheet" type="text/css" media="screen" href="index.css" />
+    <link href="font-awesome/css/font-awesome.css" rel="stylesheet" />
     <!--load all styles -->
+  </head>
 
-
-</head>
-
-<body>
+  <body>
     <header class="header">
-        <div class="header_logo">
-            <img class="header_logo--image" title="LogoImage" src="image/logo.webp">
-            <h1 class="header_logo--title"> @yourservice Platform </h1>
-        </div>
+      <div class="header_logo">
+        <img
+          class="header_logo--image"
+          title="LogoImage"
+          src="image/logo.webp"
+        />
+        <h1 class="header_logo--title">@yourservice Platform</h1>
+      </div>
     </header>
     <nav class="navbar">
+      <input class="menu-btn" type="checkbox" id="menu-btn" />
+      <label class="menu-icon" for="menu-btn"
+        ><span class="navicon"></span
+      ></label>
 
-        <input class="menu-btn" type="checkbox" id="menu-btn" />
-        <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
-
-        <ul class="menu">
-            <li><a href="#work">Home</a></li>
-            <li><a href="#about">Blog</a></li>
-            <li><a href="#careers">Germany</a></li>
-            <li><a href="#contact">Portugal</a></li>
-        </ul>
-
+      <ul class="menu">
+        <li><a href="#work">Home</a></li>
+        <li><a href="#about">Blog</a></li>
+        <li><a href="#careers">Germany</a></li>
+        <li><a href="#contact">Portugal</a></li>
+      </ul>
     </nav>
 
-
-    <section class="parallax">
-    </section>
+    <section class="parallax"></section>
 
     <section class=" intro__section">
-        <h1 data-aos="fade-up" data-aos-once="true" class="intro__heading">@yourservice <br> Platform </h1>
-        <p data-aos="fade-up" data-aos-once="true" class="intro__paragraph"> WELCOME! <br> HERE YOU CAN FIND THE SERVICE
-            YOU NEED!</p>
+      <h1 data-aos="fade-up" data-aos-once="true" class="intro__heading">
+        @yourservice <br />
+        Platform
+      </h1>
+      <p data-aos="fade-up" data-aos-once="true" class="intro__paragraph">
+        WELCOME! <br />
+        HERE YOU CAN FIND THE SERVICE YOU NEED!
+      </p>
     </section>
-
 
     <section class="about col-md-12">
-        <div class="col-md-6 about__description">
-            <div class="about__wrapper" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine"
-                data-aos-once="true">
-                <h2 class="about__wrapper--heading"> About us! </h2>
-                <p class="about__wrapper--paragraph"> This project is a result of an international partnership between
-                    Refugees Welcome Porto (Portugal), Wasla (Germany); United Society of Balkans (Greece) and Inserta
-                    Andalucia ( Spain), funded by the Erasmus + Programme.</p>
-                <p class="about__wrapper--paragraph"> ​The platform at your service its a project that aims to reunite
-                    all services available for refugees and migrants in Portugal and Germany and legal information about
-                    asylum procedures in this countries. </p>
-            </div>
-
+      <div class="col-md-6 about__description">
+        <div
+          class="about__wrapper"
+          data-aos="fade-right"
+          data-aos-offset="300"
+          data-aos-easing="ease-in-sine"
+          data-aos-once="true"
+        >
+          <h2 class="about__wrapper--heading">About us!</h2>
+          <p class="about__wrapper--paragraph">
+            This project is a result of an international partnership between
+            Refugees Welcome Porto (Portugal), Wasla (Germany); United Society
+            of Balkans (Greece) and Inserta Andalucia ( Spain), funded by the
+            Erasmus + Programme.
+          </p>
+          <p class="about__wrapper--paragraph">
+            ​The platform at your service its a project that aims to reunite all
+            services available for refugees and migrants in Portugal and Germany
+            and legal information about asylum procedures in this countries.
+          </p>
         </div>
-        <div class="col-md-6 about__logo">
-            <img src="image/About-logo.webp" class="img-fluid" alt="aboutLogo">
-        </div>
+      </div>
+      <div class="col-md-6 about__logo">
+        <img src="image/About-logo.webp" class="img-fluid" alt="aboutLogo" />
+      </div>
     </section>
-
 
     <section class="intro__sectionTwo">
-        <h2 class="intro__headingTwo">Ready to start? </h2>
-        <p class="intro__paragraphTwo">Choose the country that you want to know more about!
-
-        </p>
+      <h2 class="intro__headingTwo">Ready to start?</h2>
+      <p class="intro__paragraphTwo">
+        Choose the country that you want to know more about!
+      </p>
     </section>
-
 
     <section class="countery col-md-12">
-        <div class="col-md-6 countery__german">
-            <img src="image/german.webp" class="countery__img-fluid" alt="aboutLogo">
-            <div class="countery__wrapper">
-
-                <p class="countery__describtion--name" data-aos="zoom-out-up" data-aos-once="true">Germany</p>
-                <a href="something" class="button3" data-aos="fade-up" data-aos-duration="1000"
-                    data-aos-once="true">Know more</a>
-
-            </div>
-
+      <div class="col-md-6 countery__german">
+        <img
+          src="image/german.webp"
+          class="countery__img-fluid"
+          alt="aboutLogo"
+        />
+        <div class="countery__wrapper">
+          <p
+            class="countery__describtion--name"
+            data-aos="zoom-out-up"
+            data-aos-once="true"
+          >
+            Germany
+          </p>
+          <a
+            href="something"
+            class="button3"
+            data-aos="fade-up"
+            data-aos-duration="1000"
+            data-aos-once="true"
+            >Know more</a
+          >
         </div>
-        <div class="col-md-6 countery__portogal">
-            <img src="image/portogal.webp" class="countery__img-fluid" alt="aboutLogo">
+      </div>
+      <div class="col-md-6 countery__portogal">
+        <img
+          src="image/portogal.webp"
+          class="countery__img-fluid"
+          alt="aboutLogo"
+        />
 
-
-            <div class="countery__wrapper">
-
-                <p class="countery__describtion--name" data-aos="zoom-out-up" data-aos-once="true">Portugal</p>
-                <a href="something" class="button3" data-aos="fade-up" data-aos-duration="1000"
-                    data-aos-once="true">Know more</a>
-
-            </div>
+        <div class="countery__wrapper">
+          <p
+            class="countery__describtion--name"
+            data-aos="zoom-out-up"
+            data-aos-once="true"
+          >
+            Portugal
+          </p>
+          <a
+            href="something"
+            class="button3"
+            data-aos="fade-up"
+            data-aos-duration="1000"
+            data-aos-once="true"
+            >Know more</a
+          >
         </div>
+      </div>
     </section>
-
 
     <section class="contactUsSection  col-md-12">
-        <div class=" formContact__Wrapper">
-            <div class="col-md-6 formContact__social">
-                <span class="formContact__socialHeading" data-aos="fade-up" data-aos-duration="3000"
-                    data-aos-once="true">Get in touch!</span>
+      <div class=" formContact__Wrapper">
+        <div class="col-md-6 formContact__social">
+          <span
+            class="formContact__socialHeading"
+            data-aos="fade-up"
+            data-aos-duration="3000"
+            data-aos-once="true"
+            >Get in touch!</span
+          >
 
-                <div class="icons__social" data-aos="zoom-out-up" data-aos-once="true">
-                    <i class="fa fa-facebook-f"></i>
-                    <i class="fa fa-twitter"></i>
-                    <i class="fa fa-linkedin"></i>
-
-                </div>
-
-            </div>
-            <div class="col-md-6 formContact__form">
-
-                <form class="contact-form ">
-                    <div class="wrap-inputform ">
-                        <input id="name" class="inputform" type="text" name="name" placeholder="Name">
-
-                    </div>
-
-
-                    <div class="wrap-inputform ">
-                        <input id="email" required class="inputform" type="email" name="email" placeholder="Email">
-
-                    </div>
-
-
-                    <div class="wrap-inputform ">
-                        <input id="subject" class="inputform" type="subject" name="subject" placeholder="Subject">
-
-                    </div>
-
-
-
-                    <div class="wrap-inputform ">
-                        <textarea required id="message" class="inputform " name="message"
-                            placeholder="Text your message here"></textarea>
-
-                    </div>
-
-                    <div class="container-contact-form-btn">
-                        <button class="contact-form-btn">
-                            Send
-                        </button>
-                    </div>
-                </form>
-
-            </div>
-        </div>
-
-        <div class="contactUsSection__img ">
-            <img alt="last Image in landing page " class="contactUsSection__img-fluid"
-                src="image/footerImageLandingPage.webp">
-        </div>
-    </section>
-
-    <section class="col-md-12 article__items">
-        <div class="item ">
-            <img class="item__img-fluid" alt="img for articl" src="image/articlimag.webp">
-            <div class="item_overlay">
-            </div>
-            <div class="item__date--wrapper">
-                <span>jan 2 .</span>
-                <span>1 min</span>
-            </div>
-
-            <div class="item__heading--wrapper">
-                <h3> <a class="item__overlay--heading">Como fazer eles felizes: 10 dicas para mantê-los sorrindo</a>
-                </h3>
-            </div>
-        </div>
-
-        <div class="item ">
-            <img class="item__img-fluid" alt="img for articl" src="image/articlimag.webp">
-            <div class="item_overlay">
-            </div>
-            <div class="item__date--wrapper">
-                <span>jan 2 .</span>
-                <span>1 min</span>
-            </div>
-
-            <div class="item__heading--wrapper">
-                <h3> <a class="item__overlay--heading">Como fazer eles felizes: 10 dicas para mantê-los sorrindo</a>
-                </h3>
-            </div>
-        </div>
-        
-
-        <div class="item ">
-            <img class="item__img-fluid" alt="img for articl" src="image/articlimag.webp">
-            <div class="item_overlay">
-            </div>
-            <div class="item__date--wrapper">
-                <span>jan 2 .</span>
-                <span>1 min</span>
-            </div>
-
-            <div class="item__heading--wrapper">
-                <h3> <a class="item__overlay--heading">Como fazer eles felizes: 10 dicas para mantê-los sorrindo</a>
-                </h3>
-            </div>
-        </div>
-
-    </section>
-     
-    <footer class="footer">
-      
-        <div class="icons__footer">
+          <div
+            class="icons__social"
+            data-aos="zoom-out-up"
+            data-aos-once="true"
+          >
             <i class="fa fa-facebook-f"></i>
             <i class="fa fa-twitter"></i>
             <i class="fa fa-linkedin"></i>
+          </div>
+        </div>
+        <div class="col-md-6 formContact__form">
+          <form class="contact-form ">
+            <div class="wrap-inputform ">
+              <input
+                id="name"
+                class="inputform"
+                type="text"
+                name="name"
+                placeholder="Name"
+              />
+            </div>
 
+            <div class="wrap-inputform ">
+              <input
+                id="email"
+                required
+                class="inputform"
+                type="email"
+                name="email"
+                placeholder="Email"
+              />
+            </div>
+
+            <div class="wrap-inputform ">
+              <input
+                id="subject"
+                class="inputform"
+                type="subject"
+                name="subject"
+                placeholder="Subject"
+              />
+            </div>
+
+            <div class="wrap-inputform ">
+              <textarea
+                required
+                id="message"
+                class="inputform "
+                name="message"
+                placeholder="Text your message here"
+              ></textarea>
+            </div>
+
+            <div class="container-contact-form-btn">
+              <button class="contact-form-btn">
+                Send
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+
+      <div class="contactUsSection__img ">
+        <img
+          alt="last Image in landing page "
+          class="contactUsSection__img-fluid"
+          src="image/footerImageLandingPage.webp"
+        />
+      </div>
+    </section>
+
+    <section class="col-md-12 article__items">
+      <div class="item ">
+        <img
+          class="item__img-fluid"
+          alt="img for articl"
+          src="image/articlimag.webp"
+        />
+        <div class="item_overlay"></div>
+        <div class="item__date--wrapper">
+          <span>jan 2 .</span>
+          <span>1 min</span>
         </div>
 
+        <div class="item__heading--wrapper">
+          <h3>
+            <a class="item__overlay--heading"
+              >Como fazer eles felizes: 10 dicas para mantê-los sorrindo</a
+            >
+          </h3>
+        </div>
+      </div>
+
+      <div class="item ">
+        <img
+          class="item__img-fluid"
+          alt="img for articl"
+          src="image/articlimag.webp"
+        />
+        <div class="item_overlay"></div>
+        <div class="item__date--wrapper">
+          <span>jan 2 .</span>
+          <span>1 min</span>
+        </div>
+
+        <div class="item__heading--wrapper">
+          <h3>
+            <a class="item__overlay--heading"
+              >Como fazer eles felizes: 10 dicas para mantê-los sorrindo</a
+            >
+          </h3>
+        </div>
+      </div>
+
+      <div class="item ">
+        <img
+          class="item__img-fluid"
+          alt="img for articl"
+          src="image/articlimag.webp"
+        />
+        <div class="item_overlay"></div>
+        <div class="item__date--wrapper">
+          <span>jan 2 .</span>
+          <span>1 min</span>
+        </div>
+
+        <div class="item__heading--wrapper">
+          <h3>
+            <a class="item__overlay--heading"
+              >Como fazer eles felizes: 10 dicas para mantê-los sorrindo</a
+            >
+          </h3>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="icons__footer">
+        <i class="fa fa-facebook-f"></i>
+        <i class="fa fa-twitter"></i>
+        <i class="fa fa-linkedin"></i>
+      </div>
+
+      <p class="footer__paragraph">
+        ©2020 Orgulhosamente criado
+      </p>
     </footer>
 
     <script src="js/jQuery.js"></script>
     <script src="js/bootstrap.js"></script>
     <script src="js/aos.js"></script>
 
-    <script src='main.js'></script>
+    <script src="main.js"></script>
     <script>
-        AOS.init();
+      AOS.init();
     </script>
-</body>
-
+  </body>
 </html>
