@@ -9,6 +9,8 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <link rel="stylesheet" type="text/css" media="screen" href="../../js/bootstrap.min.css" />
     <link rel="stylesheet" type="text/css" media="screen" href="portugal.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="../../css/show-slider.css" />
+
     <link href="../../font-awesome/css/font-awesome.css" rel="stylesheet" />
     <!--load all styles -->
 </head>
@@ -205,19 +207,72 @@
      <section class="Slider col-md-12">
         <div class="accordion">
             <ul>
-                <li>
-
+                <li class="1">
+                 <img src="../../image/slide2.jpg" onclick="openModal();currentSlide(2)" class="hover-shadow"  alt="Portogal" >
                 </li>
-                <li>
-
+                <li class="2">
+                    <img src="../../image/slide2.jpg" onclick="openModal();currentSlide(2)" class="hover-shadow"  alt="Portoga2">
                 </li>
-                <li>
-
+                <li class="3">
+                    <img src="../../image/slide2.jpg" onclick="openModal();currentSlide(2)" class="hover-shadow"  alt="Portoga3">
                 </li>
 
             </ul>
         </div>
     </section> 
+    
+
+
+  
+  <!-- The Modal/Lightbox -->
+  <div id="myModal" class="modal">
+    <span class="close cursor" onclick="closeModal()">&times;</span>
+    <div class="modal-content">
+  
+      <div class="mySlides">
+        <div class="numbertext">1 / 3</div>
+        <img src="../../image/slide2.jpg"  style="width:100%" alt="Portogal">
+      </div>
+  
+      <div class="mySlides">
+        <div class="numbertext">2 / 3</div>
+        <img  src="../../image/slide2.jpg"  style="width:100%" alt="Portogal2">
+      </div>
+  
+      <div class="mySlides">
+        <div class="numbertext">3 /3</div>
+        <img src="../../image/slide2.jpg"  style="width:100%" alt="Portoga3">
+      </div>
+  
+   
+  
+      <!-- Next/previous controls -->
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+  
+      <!-- Caption text -->
+      <div class="caption-container">
+        <p id="caption"></p>
+      </div>
+  
+      <!-- Thumbnail image controls -->
+ 
+    </div>
+  </div>
+
+    <!-- <div style="
+    display: none;
+    background-color: red;
+    width: 100%;
+    height: 10000px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+"
+class='adadad'>
+        
+    </div> -->
     <section class="col-md-12  WelecomVideo">
        
             <div class="WelecomVideo__wrapper col-md-12">
@@ -249,11 +304,12 @@
     <script src="../../js/jQuery.js"></script>
     <script src="../../js/bootstrap.js"></script>
     <script src="../../js/aos.js"></script>
-
+    <script src="../../js/show-slider.js"></script>
     <script src="portugal.js"></script>
     <script>
         AOS.init();
     </script>
+
 </body>
 
 </html>
