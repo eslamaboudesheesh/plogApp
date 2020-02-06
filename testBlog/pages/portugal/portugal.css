@@ -271,7 +271,7 @@ padding-bottom: 0px;
 /*allServices*/
  .allServices{
     background-color: #626e0a;
-    
+    overflow: hidden;
 }
 
 .allServices__Wrapper{
@@ -395,6 +395,7 @@ padding-bottom: 0px;
 
 
   .searchServices{
+    overflow: hidden;
     height: 350px;
  position: relative;
  text-align: center;
@@ -452,6 +453,7 @@ padding-bottom: 0px;
   }
   
   .accordion ul li {
+    cursor: pointer;
     display: table-cell;
     vertical-align: bottom;
     position: relative;
@@ -486,7 +488,7 @@ padding-bottom: 0px;
     background-color: #fefefe;
     margin: auto;
     padding: 0;
-    width: 90%;
+    width: 60%;
     max-width: 1200px;
   }
   
@@ -591,10 +593,12 @@ padding-bottom: 0px;
 
     .accordion { height: auto; }
 
+    .modal-content {
     
+      width: 90%;
     }
 
-
+  }
 /*video section */
   /*search all services */ 
 
@@ -603,7 +607,7 @@ padding-bottom: 0px;
  position: relative;
  text-align: center;
  
-
+overflow: hidden;
 }
 
 .WelecomVideo__wrapper {
@@ -622,6 +626,19 @@ padding-bottom: 0px;
     color: #181818;
 }
 
+
+@media screen and (max-width: 600px) {
+
+  .WelecomVideo__title{
+    font: normal normal normal 42px/1.25em poppins-semibold,poppins,sans-serif;
+   
+  }
+  
+  .WelecomVideo__paragraph{
+      font: normal normal normal 18px/1.67em poppins-semibold,poppins,sans-serif;
+  }
+  
+  }
 
 .WelecomVideo__youTubeFrame{
     height: 515px;
