@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link rel="stylesheet" type="text/css" media="screen" href="../../js/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="searchfeed.css" />
+
+    <link href="../../font-awesome/css/font-awesome.css" rel="stylesheet" />
+    <!--load all styles -->
+</head>
+
+<body>
+    <header class="header">
+        <div class="header_logo">
+            <img class="header_logo--image" title="LogoImage" src="../../image/logo.webp" />
+            <h1 class="header_logo--title">@yourservice Platform</h1>
+        </div>
+    </header>
+    <nav class="navbar">
+        <input class="menu-btn" type="checkbox" id="menu-btn" />
+        <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+
+        <ul class="menu">
+            <li><a href="#work">Home</a></li>
+            <li><a href="#about">Blog</a></li>
+            <li><a href="#careers">Germany</a></li>
+            <li><a href="#contact">Portugal</a></li>
+        </ul>
+    </nav>
+
+
+
+    <section class="articlesfeed ">
+        <div class="articlesfeed__header col-md-12">
+             <div class="header__name">
+                 <h2>Todos os posts</h2>
+             </div>
+
+   
+
+            <div class="header__login">
+               
+                 <div class="button__wrapper--open">
+                     <button class="button__openmodel">  Login / Registre-se</button>
+                 </div>
+            </div>
+
+            <div class="search__wrapper" style="float: right;"> 
+                    <div class="cntr">
+                            <div class="cntr-innr">
+                              <label class="search" for="inpt_search">
+                                    <input id="inpt_search" type="text" />
+                                </label>
+                            
+                            </div>
+                        </div> 
+             </div>
+        </div>
+
+
+
+    </section>
+    <!--
+         if not found any elmeny in search you should randering this section
+     -->
+    <!-- <section class="articlesNotFound__items__wrapper col-md-12">
+        <div class="notFoundItems__wrapper">
+            <h2>Procurando alguma coisa?  </h2>
+             <p>Procure posts e comentários aqui.</p>
+             </div>
+            </section> -->
+    <!-- else we found item search -->
+
+    <section class="articles__items__wrapper col-md-12 ">
+        <div class="cards">
+
+            <div class="about__wrapper">
+                <ul>
+                    <li>
+                        <img src="../../image/avatar.jpg" class="avatar " alt="avatar" />
+                        <div class="about">
+                            <h5 class="username">Vincent Porter <img src="../../image/crown-solid.svg"
+                                    style="width: 15px; float: right;margin-left: 5px"> </h5>
+                            <div class="details__post">
+                                <span> Jan &#8226; </span>
+                                <span> 1 min </span>
+                            </div>
+
+                        </div>
+                    </li>
+
+                    <i class="fa fa-ellipsis-v share__button popup" onclick="myFunction(1)">
+                        <span class="popuptext" id="myPopup1"> <i class="fa fa-share"
+                                style="    margin-right: 10px;"></i> Compartilhar post </span>
+
+                    </i>
+
+                </ul>
+
+
+            </div>
+
+
+
+            <div class="article__description">
+
+                <a href="#" title="start reading ">
+
+                    <h2 class="article__header">
+                        9 maneiras de fortalecer as suas habilidades de líder</h2>
+
+                </a>
+                <p class="article__paraghraph">
+                    Este é o post do seu blog. Para engajar seus visitantes nós sugerimos que escreva sobre tópicos
+                    relacionados ao seu site ou seu negócio. Blogar é muito interessante para o seu SEO, então
+                    recomendamos incluir palavras-chave que sejam relacionadas ao seu serviço, produto ou indústria
+                    dentro de seus textos. Isso o ajudará a ser encontrado na internet. Pronto para excluir este
+                    post e adicionar o seu? Vá até Gerenciar para abrir o painel de controle e clique no botão de 3
+                    pontos (...), depois clique Excluir post. Você também pode ir até Configurações > Gerenciar
+                    blog, e excluir qualquer post existente lá. Agora você está pronto para criar o seu próprio
+                    post! Procure pelo botão Criar novo post par
+                </p>
+            </div>
+
+
+
+        </div>
+
+
+        <div class="cards">
+
+            <div class="about__wrapper">
+                <ul>
+                    <li>
+                        <img src="../../image/avatar.jpg" class="avatar " alt="avatar" />
+                        <div class="about">
+                            <h5 class="username">Vincent Porter <img src="../../image/crown-solid.svg"
+                                    style="width: 15px; float: right;margin-left: 5px"> </h5>
+                            <div class="details__post">
+                                <span> Jan &#8226; </span>
+                                <span> 1 min </span>
+                            </div>
+
+                        </div>
+                    </li>
+
+                    <i class="fa fa-ellipsis-v share__button popup" onclick="myFunction(2)">
+                        <span class="popuptext" id="myPopup2"> <i class="fa fa-share"
+                                style="    margin-right: 10px;"></i> Compartilhar post </span>
+
+                    </i>
+
+                </ul>
+
+
+            </div>
+
+
+
+            <div class="article__description">
+
+                <a href="#" title="start reading ">
+
+                    <h2 class="article__header">
+                        9 maneiras de fortalecer as suas habilidades de líder</h2>
+
+                </a>
+                <p class="article__paraghraph">
+                    Este é o post do seu blog. Para engajar seus visitantes nós sugerimos que escreva sobre tópicos
+                    relacionados ao seu site ou seu negócio. Blogar é muito interessante para o seu SEO, então
+                    recomendamos incluir palavras-chave que sejam relacionadas ao seu serviço, produto ou indústria
+                    dentro de seus textos. Isso o ajudará a ser encontrado na internet. Pronto para excluir este
+                    post e adicionar o seu? Vá até Gerenciar para abrir o painel de controle e clique no botão de 3
+                    pontos (...), depois clique Excluir post. Você também pode ir até Configurações > Gerenciar
+                    blog, e excluir qualquer post existente lá. Agora você está pronto para criar o seu próprio
+                    post! Procure pelo botão Criar novo post par
+                </p>
+            </div>
+
+
+
+        </div>
+
+
+
+
+        <div class="cards">
+
+            <div class="about__wrapper">
+                <ul>
+                    <li>
+                        <img src="../../image/avatar.jpg" class="avatar " alt="avatar" />
+                        <div class="about">
+                            <h5 class="username">Vincent Porter <img src="../../image/crown-solid.svg"
+                                    style="width: 15px; float: right;margin-left: 5px"> </h5>
+                            <div class="details__post">
+                                <span> Jan &#8226; </span>
+                                <span> 1 min </span>
+                            </div>
+
+                        </div>
+                    </li>
+
+                    <i class="fa fa-ellipsis-v share__button popup" onclick="myFunction(3)">
+                        <span class="popuptext" id="myPopup3"> <i class="fa fa-share"
+                                style="    margin-right: 10px;"></i> Compartilhar post </span>
+
+                    </i>
+
+                </ul>
+
+
+            </div>
+
+
+
+            <div class="article__description">
+
+                <a href="#" title="start reading ">
+
+                    <h2 class="article__header">
+                        9 maneiras de fortalecer as suas habilidades de líder</h2>
+
+                </a>
+                <p class="article__paraghraph">
+                    Este é o post do seu blog. Para engajar seus visitantes nós sugerimos que escreva sobre tópicos
+                    relacionados ao seu site ou seu negócio. Blogar é muito interessante para o seu SEO, então
+                    recomendamos incluir palavras-chave que sejam relacionadas ao seu serviço, produto ou indústria
+                    dentro de seus textos. Isso o ajudará a ser encontrado na internet. Pronto para excluir este
+                    post e adicionar o seu? Vá até Gerenciar para abrir o painel de controle e clique no botão de 3
+                    pontos (...), depois clique Excluir post. Você também pode ir até Configurações > Gerenciar
+                    blog, e excluir qualquer post existente lá. Agora você está pronto para criar o seu próprio
+                    post! Procure pelo botão Criar novo post par
+                </p>
+            </div>
+
+
+
+        </div>
+
+        <ul class="pagination">
+            <li><a href="#">1</a></li>
+            <li><a href="#">2</a></li>
+            <li><a href="#">3</a></li>
+            <li><a href="#">4</a></li>
+            <li><a href="#">5</a></li>
+        </ul>
+    </section>
+
+
+
+    <footer class="footer  col-md-12">
+        <div class="icons__footer">
+            <i class="fa fa-facebook-f"></i>
+            <i class="fa fa-twitter"></i>
+            <i class="fa fa-linkedin"></i>
+        </div>
+
+        <p class="footer__paragraph">
+            ©2020 Orgulhosamente criado
+        </p>
+    </footer>
+
+    <script src="../../js/jQuery.js"></script>
+    <script src="../../js/bootstrap.js"></script>
+
+
+    <script src="searchfeed.js"></script>
+
+
+</body>
+
+</html>
