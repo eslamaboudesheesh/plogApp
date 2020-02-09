@@ -3,6 +3,9 @@ function myFunction(num) {
     var popup = document.getElementById("myPopup"+num);
     popup.classList.toggle("show");
   }
+  $('#copyLinke').on('shown.bs.modal', function() {
+    $('.inputform').focus();
+  });
 
   $("#inpt_search").on('focus', function () {
 	$(this).parent('label').addClass('active');

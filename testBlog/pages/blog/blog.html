@@ -41,18 +41,18 @@
                 <a class="header__name--link">
                     
                     <h2 class="notShow">Todos os posts</h2>  
-                    <i class="fa fa-arrow-left showing"></i> 
+                    <h2 class="showing"> Blog</h2>
                 </a>
              </div>
 
    
 
-            <div class="header__login">
+            <!-- <div class="header__login">
                
                  <div class="button__wrapper--open">
                      <button class="button__openmodel" data-target='#modalNavigation' data-toggle='modal'>   Login / Registre-se</button>
                  </div>
-            </div>
+            </div> -->
 
             <div class="search__wrapper" style="float: right;"> 
                     <div class="cntr">
@@ -70,6 +70,62 @@
 
     </section>
 
+
+    <div class='modal fade modal-fullscreen-menu' id='modalNavigation' role='dialog' tabindex='-1'>
+            <button aria-label='Close' class='close' data-dismiss='modal' type='button'>
+                <span class='sr-only'>Close navigation</span>
+                <i class="fa fa-times" style="color:white;" ></i>
+            </button>
+            <div class='modal-dialog   '>
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <p class="model__body--header">Compartilhar post</p>
+                        <ul class="social__search">
+                          <button class="facebook__button social__button"><i class="fa fa-facebook-f"></i> </button>
+                          <button class="twitter__button social__button"> <i class="fa fa-twitter"></i> </button>
+                          <button class="linkedin__button social__button">  <i class="fa fa-linkedin"></i> </button>
+                          <button class="copyLink__button social__button" data-target='#copyLinke' data-toggle='modal'> <i class="fa fa-link"></i> </button>
+    
+                        </ul>
+                      </div>
+    
+                </div>
+            </div>
+        </div>
+    
+    
+    
+        <div class='modal fade modal-fullscreen-menu' id='copyLinke' role='dialog' tabindex='-1'>
+            <button aria-label='Close' class='close' data-dismiss='modal' type='button'>
+                <span class='sr-only'>Close navigation</span>
+                <i class="fa fa-times" style="color:white;" ></i>
+            </button>
+            <div class='modal-dialog modal-dialog-copy'>
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <p class="model__body--header">Compartilhar link </p>
+                      
+                            <input
+                              id="name"
+                              class="inputform"
+                              type="text"
+                              name="name"
+                             
+                            />
+                           
+                      </div>
+    
+                      <div class="modal-footer">
+                            <button class="buttonCancel" data-dismiss='modal'>Cancel</button>  
+                            <button class="buttonCopy">Copy</button>
+                                  
+                         </div> 
+                </div>
+            </div>
+        </div>
+
+        
+<!-- 
     <div class='modal fade modal-fullscreen-menu' id='modalNavigation' role='dialog' tabindex='-1'>
         <button aria-label='Close' class='close' data-dismiss='modal' type='button'>
           <span class='sr-only'>Close navigation</span>
@@ -109,7 +165,7 @@
                 
               </div>
         </div>
-      </div>
+      </div> -->
    
 
     <section class="articles__items__wrapper col-md-12 ">
@@ -137,7 +193,7 @@
                         </li>
     
                         <i class="fa fa-ellipsis-v share__button popup" onclick="myFunction(1)">
-                            <span class="popuptext" id="myPopup1"> <i class="fa fa-share"
+                            <span data-target='#modalNavigation' data-toggle='modal'  class="popuptext" id="myPopup1"> <i class="fa fa-share"
                                     style="    margin-right: 10px;"></i> Compartilhar post </span>
     
                         </i>
@@ -253,6 +309,8 @@
     </section>
 
 
+
+   
 
     <footer class="footer  col-md-12">
         <div class="icons__footer">

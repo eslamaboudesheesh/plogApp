@@ -502,8 +502,186 @@ padding-bottom: 0px;
     animation: fadeIn 1s
   }
   
+  .container__login__header {
+    font: normal normal normal 28px/1.375em poppins-semibold,poppins,sans-serif;
+    font-size: 48px;
+    line-height: .8em;
+    margin-bottom: 23px;
+    margin-top: 10px;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+  .container__login__desc {
+    font: normal normal normal 18px/1.75em poppins-semibold,poppins,sans-serif;
+      font-size: 18px;
+      margin-right: 4px;
+      margin-left: 4px;
+  }
+  .container__login__desc a {
+    color: #626e00;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+
+
+  /*share model ***/
+     .modal-fullscreen-menu .close {
+      color: black;
+      opacity: 1;
+      padding: 10px;
+      position: absolute;
+      top: 0;
+      right: 0;
+      z-index: 1;
+      font-size: 5vh;
+    }
+    .modal-fullscreen-menu  {  background-color: #80808070;
+    }
+    .modal-fullscreen-menu .modal-dialog {
+      margin-top: 10vw;
+      text-align: center;
+    }
+  .model__body--header {
+    font: normal normal normal 16px/1.375em poppins-semibold,poppins,sans-serif;
+    line-height: normal;
+  }
+  .social__search {
+
+    padding-left: 0px;
+
+    }
+    
+   .social__button {
+    margin: 20px;
+    height: 50px;
+    border-width: 0;
+    border-radius: 50%;
+    width: 50px;
+    color: white;
+    font-size: 16px;
+   }
+    .social__button:active  ,  .social__button:focus {
+      outline: none;
+    } 
+    
+   .facebook__button{
+  background-color:   #4464a3;
+   }
+   .copyLink__button{
+     background-color: #333;
+   }
+   .twitter__button{
+     background-color: #55acee;
+   }
+
+  .linkedin__button {
+    background-color: #0077b5
+  }
+ .modal-dialog-copy .inputform {
+    display: block;
+    width: 100%;   
+    font: normal normal normal 14px/1.79em poppins-extralight,poppins,sans-serif;
+    color:white;
+    line-height: 1.2;
+    border-width:1px;
+    height: 50px;
+    border-style: solid;
+    border-color: rgba(24, 24, 24,23.5) ;
+    background-color: white;
+    text-overflow: ellipsis;
+    color:black;
+    padding-left: 16px;
+    padding-right: 10px;
+    margin-top: 35px;
+  }
+  .modal-dialog-copy .inputform:focus {
+    border-color:#55acee;
+    height: 50px;
+
+
+  }
+
+  .modal-dialog-copy .modal-content {
+    min-height: 120px;
+    margin: -6px;
+
+  } 
+.modal-dialog-copy .modal-footer
+{
+  border-width: 0px;
+}
+
+  button.buttonCopy{
+    position: relative;
+    display:inline-block;
+    padding: 0.3em 2.2em;
+    margin: 0px 0.3em 1em 2em;
+    box-sizing: border-box;
+    text-decoration:none;
+    color: rgba(255, 255, 255, 1);  ;
+    border-color: rgba(24,24,24,1);
+    background-color: rgba(24,24,24,1);
+      text-align:center;
+    transition: all 0.2s;
+    font: normal normal normal 18px/1.75em poppins-semibold,poppins,sans-serif;
+    line-height: normal;  
+    }
+  button.buttonCancel{
+    position: relative;
+    display:inline-block;
+    padding: 0.3em 2.2em;
+    margin: 0px 0.3em 1em 3em;
+    box-sizing: border-box;
+    text-decoration:none;
+    color:   black;
+    border-color: rgba(24,24,24,1);
+    background-color: rgba(255, 255, 255, 1);
+      text-align:center;
+    transition: all 0.2s;
+    font: normal normal normal 18px/1.75em poppins-semibold,poppins,sans-serif;
+    line-height: normal;  
+  }
+  
+
+  
+  @media (min-width: 768px)
+{.modal-dialog {
+    width: 490px !important;
+}
+
+}
+   
+  
+
+
+
+@media screen and (max-width: 600px) {
+  .modal-fullscreen-menu .modal-dialog {
+  margin-top: 20vw;
+
+  }
+  button.buttonCancel{ 
+    margin: 0px 10px 0em 0em;
+  
+  }
+  button.buttonCopy {
+    margin: 0px 0.3em 1em 1em;
+  }
+  .modal-dialog-copy .modal-content {
+    min-height: 270px;
+
+  } 
+  .social__search {
+
+    padding-left: 0px;
+
+    }
+}
+
+
 /*model login .....................*/
-.container__login__header {
+/* .container__login__header {
   font: normal normal normal 28px/1.375em poppins-semibold,poppins,sans-serif;
   font-size: 48px;
   line-height: .8em;
@@ -551,7 +729,7 @@ padding-bottom: 0px;
     z-index: 1;
     font-size: 5vh;
   }
-  .modal-fullscreen-menu  {  background-color: white;
+  .modal-fullscreen-menu  {  background-color: #80808070;
   }
   .modal-fullscreen-menu .modal-dialog {
     margin: 0 auto;
@@ -663,7 +841,7 @@ padding-bottom: 0px;
    -o-transition: all 0.4s;
    -moz-transition: all 0.4s;
    transition: all 0.4s;
- }
+ } */
 
 
   /* Add animation (fade in the popup) */

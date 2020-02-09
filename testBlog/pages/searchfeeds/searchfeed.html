@@ -37,82 +37,137 @@
 
     <section class="articlesfeed ">
         <div class="articlesfeed__header col-md-12">
-             <div class="header__name">
+            <div class="header__name">
                 <a class="header__name--link">
-                    
-                    <h2 class="notShow">Todos os posts</h2>  
-                    <i class="fa fa-arrow-left showing"></i> 
+
+                    <h2 class="notShow">Todos os posts</h2>
+                    <i class="fa fa-arrow-left showing"></i>
                 </a>
-             </div>
-
-   
-
-            <div class="header__login">
-               
-                 <div class="button__wrapper--open">
-                     <button class="button__openmodel" data-target='#modalNavigation' data-toggle='modal'>   Login / Registre-se</button>
-                 </div>
             </div>
 
-            <div class="search__wrapper" style="float: right;"> 
-                    <div class="cntr">
-                            <div class="cntr-innr">
-                              <label class="search" for="inpt_search">
-                                    <input id="inpt_search" type="text"/>
-                                </label>
-                            
-                            </div>
-                        </div> 
-             </div>
+
+
+            <!-- <div class="header__login">
+
+                <div class="button__wrapper--open">
+                    <button class="button__openmodel" data-target='#modalNavigation' data-toggle='modal'> Login /
+                        Registre-se</button>
+                </div>
+            </div> -->
+
+            <div class="search__wrapper" style="float: right;">
+                <div class="cntr">
+                    <div class="cntr-innr">
+                        <label class="search" for="inpt_search">
+                            <input id="inpt_search" type="text" />
+                        </label>
+
+                    </div>
+                </div>
+            </div>
         </div>
 
 
 
     </section>
 
+
+
     <div class='modal fade modal-fullscreen-menu' id='modalNavigation' role='dialog' tabindex='-1'>
         <button aria-label='Close' class='close' data-dismiss='modal' type='button'>
-          <span class='sr-only'>Close navigation</span>
-          <i class="fa fa-times"></i>
+            <span class='sr-only'>Close navigation</span>
+            <i class="fa fa-times" style="color:white;" ></i>
+        </button>
+        <div class='modal-dialog   '>
+            <div class="modal-content">
+                <div class="modal-body">
+                    <p class="model__body--header">Compartilhar post</p>
+                    <ul class="social__search">
+                      <button class="facebook__button social__button"><i class="fa fa-facebook-f"></i> </button>
+                      <button class="twitter__button social__button"> <i class="fa fa-twitter"></i> </button>
+                      <button class="linkedin__button social__button">  <i class="fa fa-linkedin"></i> </button>
+                      <button class="copyLink__button social__button" data-target='#copyLinke' data-toggle='modal'> <i class="fa fa-link"></i> </button>
+
+                    </ul>
+                  </div>
+
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class='modal fade modal-fullscreen-menu' id='copyLinke' role='dialog' tabindex='-1'>
+        <button aria-label='Close' class='close' data-dismiss='modal' type='button'>
+            <span class='sr-only'>Close navigation</span>
+            <i class="fa fa-times" style="color:white;" ></i>
+        </button>
+        <div class='modal-dialog modal-dialog-copy'>
+            <div class="modal-content">
+                <div class="modal-body">
+                    <p class="model__body--header">Compartilhar link </p>
+                  
+                        <input
+                          id="name"
+                          class="inputform"
+                          type="text"
+                          name="name"
+                         
+                        />
+                       
+                  </div>
+
+                  <div class="modal-footer">
+                        <button class="buttonCancel" data-dismiss='modal'>Cancel</button>  
+                        <button class="buttonCopy">Copy</button>
+                              
+                     </div> 
+            </div>
+        </div>
+    </div>
+    <!-- <div class='modal fade modal-fullscreen-menu' id='modalNavigation' role='dialog' tabindex='-1'>
+        <button aria-label='Close' class='close' data-dismiss='modal' type='button'>
+            <span class='sr-only'>Close navigation</span>
+            <i class="fa fa-times"></i>
         </button>
         <div class='modal-dialog'>
             <div class="container">
-  
+
                 <h2 class="container__login__header">Login</h2>
                 <p class="container__login__desc"> Novo neste site? <a href="#"> Registre-se</a></p>
-                
-                <form class="container__form" >
-                  
-                  <div class="group">      
-                    <input type="text" required>
-                    <span class="highlight"></span>
-                    <span class="bar"></span>
-                    <label>E-mail</label>
-                  </div>
-                    
-                  <div class="group">      
-                    <input type="text" required>
-                    <span class="highlight"></span>
-                    <span class="bar"></span>
-                    <label>senha</label>
-                  </div>
-                  
-                  <p class="footer__form">
-                    <a href="" >Esqueceu sua senha?</a>
-                  </p>
-                  
-                  <div class="container-contact-form-btn">
-                    <button class="contact-form-btn">
-                      Login
-                    </button>
-                  </div>
+
+                <form class="container__form">
+
+                    <div class="group">
+                        <input type="text" required>
+                        <span class="highlight"></span>
+                        <span class="bar"></span>
+                        <label>E-mail</label>
+                    </div>
+
+                    <div class="group">
+                        <input type="text" required>
+                        <span class="highlight"></span>
+                        <span class="bar"></span>
+                        <label>senha</label>
+                    </div>
+
+                    <p class="footer__form">
+                        <a href="">Esqueceu sua senha?</a>
+                    </p>
+
+                    <div class="container-contact-form-btn">
+                        <button class="contact-form-btn">
+                            Login
+                        </button>
+                    </div>
                 </form>
-                    
-              
-                
-              </div>
+
+
+
+            </div>
         </div>
-      </div>
+    </div> -->
     <!--
          if not found any elmeny in search you should randering this section
      -->
@@ -142,8 +197,8 @@
                         </div>
                     </li>
 
-                    <i class="fa fa-ellipsis-v share__button popup" onclick="myFunction(1)">
-                        <span class="popuptext" id="myPopup1"> <i class="fa fa-share"
+                    <i class="fa fa-ellipsis-v share__button popup" onclick="myFunction(1)" >
+                        <span class="popuptext" id="myPopup1" data-target='#modalNavigation' data-toggle='modal'> <i class="fa fa-share"
                                 style="    margin-right: 10px;"></i> Compartilhar post </span>
 
                     </i>
@@ -216,7 +271,7 @@
 
                     <h2 class="article__header">
                         9 maneiras de fortalecer as suas habilidades de líder</h2>
-                    
+
 
                 </a>
                 <p class="article__paraghraph">
@@ -316,7 +371,7 @@
     </footer>
 
 
-   
+
 
     <script src="../../js/jQuery.js"></script>
     <script src="../../js/bootstrap.js"></script>

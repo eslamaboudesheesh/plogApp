@@ -241,10 +241,15 @@ padding-bottom: 0px;
         padding-right: 14vw;
         padding-top: 10vw;
     }
+  
     
   } 
 
-
+  @media screen and (max-width: 600px) {
+    .menu {
+      text-align: center;
+    }
+  }
 
 
   .services{
