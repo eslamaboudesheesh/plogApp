@@ -181,6 +181,14 @@ padding-bottom: 0px;
       display: none;
     }
   }
+
+  @media screen and (max-width: 600px) {
+
+ 
+    .menu {
+      text-align: center;
+    }
+  }
   
   /*parallax*/
 .parallax{
