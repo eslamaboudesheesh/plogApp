@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link rel="stylesheet" type="text/css" media="screen" href="../../js/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="post.css" />
+
+    <link href="../../font-awesome/css/font-awesome.css" rel="stylesheet" />
+    <!--load all styles -->
+</head>
+
+<body>
+    <header class="header">
+        <div class="header_logo">
+            <img class="header_logo--image" title="LogoImage" src="../../image/logo.webp" />
+            <h1 class="header_logo--title">@yourservice Platform</h1>
+        </div>
+    </header>
+    <nav class="navbar">
+        <input class="menu-btn" type="checkbox" id="menu-btn" />
+        <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+
+        <ul class="menu">
+            <li><a href="#work">Home</a></li>
+            <li><a href="#about">Blog</a></li>
+            <li><a href="#careers">Germany</a></li>
+            <li><a href="#contact">Portugal</a></li>
+        </ul>
+    </nav>
+
+
+
+    <section class="articlesfeed ">
+        <div class="articlesfeed__header col-md-12">
+            <div class="header__name">
+                <a class="header__name--link">
+
+                    <h2 class="notShow">Todos os posts</h2>
+                    <i class="fa fa-arrow-left showing"></i>
+                </a>
+            </div>
+
+
+
+            <div class="search__wrapper" style="float: right;">
+                <div class="cntr">
+                    <div class="cntr-innr">
+                        <label class="search" for="inpt_search">
+                            <input id="inpt_search" type="text" />
+                        </label>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+    </section>
+
+
+
+    <div class='modal fade modal-fullscreen-menu' id='modalNavigation' role='dialog' tabindex='-1'>
+        <button aria-label='Close' class='close' data-dismiss='modal' type='button'>
+            <span class='sr-only'>Close navigation</span>
+            <i class="fa fa-times" style="color:white;" ></i>
+        </button>
+        <div class='modal-dialog   '>
+            <div class="modal-content">
+                <div class="modal-body">
+                    <p class="model__body--header">Compartilhar post</p>
+                    <ul class="social__search">
+                      <button class="facebook__button social__button"><i class="fa fa-facebook-f"></i> </button>
+                      <button class="twitter__button social__button"> <i class="fa fa-twitter"></i> </button>
+                      <button class="linkedin__button social__button">  <i class="fa fa-linkedin"></i> </button>
+                      <button class="copyLink__button social__button" data-target='#copyLinke' data-toggle='modal'> <i class="fa fa-link"></i> </button>
+
+                    </ul>
+                  </div>
+
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class='modal fade modal-fullscreen-menu' id='copyLinke' role='dialog' tabindex='-1'>
+        <button aria-label='Close' class='close' data-dismiss='modal' type='button'>
+            <span class='sr-only'>Close navigation</span>
+            <i class="fa fa-times" style="color:white;" ></i>
+        </button>
+        <div class='modal-dialog modal-dialog-copy'>
+            <div class="modal-content">
+                <div class="modal-body">
+                    <p class="model__body--header">Compartilhar link </p>
+                  
+                        <input
+                          id="name"
+                          class="inputform"
+                          type="text"
+                          name="name"
+                         
+                        />
+                       
+                  </div>
+
+                  <div class="modal-footer">
+                        <button class="buttonCancel" data-dismiss='modal'>Cancel</button>  
+                        <button class="buttonCopy">Copy</button>
+                              
+                     </div> 
+            </div>
+        </div>
+    </div>
+    
+
+    <section class="articles__items__wrapper col-md-12 ">
+        <div class="cards">
+
+            <div class="about__wrapper">
+                <ul>
+                    <li>
+                        <img src="../../image/avatar.jpg" class="avatar " alt="avatar" />
+                        <div class="about">
+                            <h5 class="username" style="display: flex;">  Vincent Porter <img src="../../image/crown-solid.svg"
+                                    style="width: 15px; float: right;margin-left: 5px ;margin-right: 5px;"> 
+                                    <span class="details__post" >
+                                        <span> Jan &#8226; </span>
+                                        <span> 1 min </span>
+                                    </span>      
+                          </h5> 
+                                  
+                            
+
+                        </div>
+                    </li>
+
+                    <i class="fa fa-ellipsis-v share__button popup" onclick="myFunction(1)" >
+                        <span class="popuptext" id="myPopup1" data-target='#modalNavigation' data-toggle='modal'> <i class="fa fa-share"
+                                style="    margin-right: 10px;"></i> Compartilhar post </span>
+
+                    </i>
+
+                </ul>
+
+
+            </div>
+
+
+
+            <div class="article__description">
+
+                <a href="#" title="start reading ">
+
+                    <h2 class="article__header">
+                        9 maneiras de fortalecer as suas habilidades de líder</h2>
+
+                </a>
+                <div class="article__wrapper_paragraph">
+                <p class="article__paraghraph">
+                    Este é o post do seu blog. Para engajar seus visitantes nós sugerimos que escreva sobre tópicos
+                    relacionados ao seu site ou seu negócio. Blogar é muito interessante para o seu SEO, então
+                    recomendamos incluir palavras-chave que sejam relacionadas ao seu serviço, produto ou indústria
+                    dentro de seus textos. Isso o ajudará a ser encontrado na internet. Pronto para excluir este
+                    post e adicionar o seu? Vá até Gerenciar para abrir o painel de controle e clique no botão de 3
+                    pontos (...), depois clique Excluir post. Você também pode ir até Configurações > Gerenciar
+                    blog, e excluir qualquer post existente lá. Agora você está pronto para criar o seu próprio
+                    post! Procure pelo botão Criar novo post par
+                </p>
+                <p class="article__paraghraph">
+                    Este é o post do seu blog. Para engajar seus visitantes nós sugerimos que escreva sobre tópicos
+                    relacionados ao seu site ou seu negócio. Blogar é muito interessante para o seu SEO, então
+                    recomendamos incluir palavras-chave que sejam relacionadas ao seu serviço, produto ou indústria
+                    dentro de seus textos. Isso o ajudará a ser encontrado na internet. Pronto para excluir este
+                    post e adicionar o seu? Vá até Gerenciar para abrir o painel de controle e clique no botão de 3
+                    pontos (...), depois clique Excluir post. Você também pode ir até Configurações > Gerenciar
+                    blog, e excluir qualquer post existente lá. Agora você está pronto para criar o seu próprio
+                    post! Procure pelo botão Criar novo post par
+                </p>
+            </div>
+                <div class="articl__img">
+                    <img src="../../image/articlimag.webp">
+                </div>
+
+                <div class="hashTag">
+                    <ul>
+                        <li><a href="#" title="goTo"> &#35;Habilidades </a></li>
+                        <li><a href="#" title="goTo"> &#35;Habilidades </a></li>
+                        <li><a href="#" title="goTo"> &#35;Habilidades </a></li>
+                    </ul>
+                </div>
+
+                <div
+            class="icons__social" >
+            <i class="fa fa-facebook-f"></i>
+            <i class="fa fa-twitter"></i>
+            <i class="fa fa-linkedin"></i>
+           <i class="fa fa-link"  data-target='#copyLinke' data-toggle='modal'></i>
+          </div>
+
+            </div>
+
+
+
+        </div>
+
+
+  
+    </section>
+
+
+
+    <footer class="footer  col-md-12">
+        <div class="icons__footer">
+            <i class="fa fa-facebook-f"></i>
+            <i class="fa fa-twitter"></i>
+            <i class="fa fa-linkedin"></i>
+        </div>
+
+        <p class="footer__paragraph">
+            ©2020 Orgulhosamente criado
+        </p>
+    </footer>
+
+
+
+
+    <script src="../../js/jQuery.js"></script>
+    <script src="../../js/bootstrap.js"></script>
+
+
+    <script src="post.js"></script>
+
+
+</body>
+
+</html>
