@@ -725,7 +725,11 @@ padding-bottom: 0px;
     }
     }
     
-
+/** slider section **/
+.slider__wrapper {
+float: right;
+padding-top: 20px;
+}
 /*footer*/ 
 
 .footer {
