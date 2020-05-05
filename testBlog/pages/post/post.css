@@ -741,11 +741,11 @@ padding-top: 20px;
 /*itemess .........*/
 .article__items{
     padding-left: 17vw;
-    padding-right: 16vw;
+    padding-right: 11vw;
   padding-top: 2vw;
     padding-top: 2vw;
     display: flex;
-    flex-wrap: wrap;
+  
     justify-content: space-between;
   
   }
