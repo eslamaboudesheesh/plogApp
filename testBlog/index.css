@@ -400,6 +400,35 @@ a.button3 {
 
 /*form section  */
 
+/* Add a green text color and a checkmark when the requirements are right */
+
+#messagec {
+  display:none;
+  width: 300px;
+  margin-top: 50px;
+}
+
+.valid {
+  color: green;
+}
+
+.valid:before {
+  position: relative;
+  left: -35px;
+  content: "✔";
+}
+
+/* Add a red text color and an "x" when the requirements are wrong */
+.invalid {
+  color: red;
+}
+
+.invalid:before {
+  position: relative;
+  left: -35px;
+  content: "✖";
+}
+
 
 .contactUsSection{
   background-color: #626e0a;
