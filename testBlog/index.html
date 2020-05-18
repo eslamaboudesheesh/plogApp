@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>Page Title</title>
+    <title>Page Title New </title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <link
@@ -25,7 +25,7 @@
           title="LogoImage"
           src="image/logo.webp"
         />
-        <h1 class="header_logo--title">kids Library </h1>
+        <h1 class="header_logo--title">kids Library blabla</h1>
       </div>
     </header>
     <nav class="navbar">
@@ -47,11 +47,11 @@
     <section class=" intro__section">
       <h1 data-aos="fade-up" data-aos-once="true" class="intro__heading">
         @yourservice <br />
-        Platform
+        Platform changed
       </h1>
       <p data-aos="fade-up" data-aos-once="true" class="intro__paragraph">
         WELCOME! <br />
-        HERE YOU CAN FIND THE SERVICE YOU NEED!
+        HERE YOU CAN FIND THE SERVICE YOU NEED! Hello
       </p>
     </section>
 
@@ -109,7 +109,7 @@
           href="../testBlog/pages/german/german.html"
             class="button3"
             data-aos="fade-up"
-            data-aos-duration="1000"
+            data-aos-duration="1000" 
             data-aos-once="true"
             >Know more</a
           >
@@ -162,6 +162,23 @@
             <i class="fa fa-twitter"></i>
             <i class="fa fa-linkedin"></i>
           </div>
+
+          <div id="messagec">
+            <div class="alert alert-warning invalid"  id="letter">
+              A lowercase letter
+            </div>
+            <div class="alert alert-warning invalid"  id="capital">
+              A capital (uppercase) letter
+            </div>
+            <div class="alert alert-warning invalid"  id="number">
+              A number
+            </div>
+            <div class="alert alert-warning invalid"  id="length">
+               Minimum 8 characters
+             </div>
+        
+          </div>
+          
         </div>
         <div class="col-md-6 formContact__form">
           <form class="contact-form ">
@@ -188,6 +205,17 @@
 
             <div class="wrap-inputform ">
               <input
+                id="subjectPass"
+                required
+                pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+                class="inputform"
+                type="password"
+                name="password"
+                placeholder="please enter password"
+              />
+            </div>
+            <div class="wrap-inputform ">
+              <input
                 id="subject"
                 class="inputform"
                 type="subject"
@@ -212,6 +240,9 @@
               </button>
             </div>
           </form>
+
+     
+
         </div>
       </div>
 
